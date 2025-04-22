@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIEM Log Simulator | Auroch Security</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto Mono', monospace;
+      background-color: #0e1a2b;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      color: #00b3b3;
+      font-size: 2.5rem;
+    }
+    h2 {
+      border-bottom: 1px solid #00b3b3;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    pre {
+      background-color: #1e293b;
+      padding: 1rem;
+      overflow-x: auto;
+      border-left: 3px solid #00b3b3;
+    }
+    a {
+      color: #5eead4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SIEM Log Simulator</h1>
+    <p><strong>Author:</strong> Charles G. | Auroch Security</p>
+    <p>Simulate Windows-style security events for SIEM pipeline testing and log ingestion training.</p>
+  </header>
+
+  <section>
+    <h2>🛠 Features</h2>
+    <ul>
+      <li>Outputs synthetic logs with random user/IP/process/malware patterns</li>
+      <li>Useful for testing detection rules and pipeline ingestion</li>
+      <li>Customizable via CLI flags</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🚀 Usage</h2>
+    <pre>python siem_log_simulator.py -n 100 -o logs.txt</pre>
+    <ul>
+      <li><code>-n</code>: Number of logs (default: 50)</li>
+      <li><code>-o</code>: Output filename (default: simulated_logs.txt)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>📄 Sample Output</h2>
+    <pre>
+[2025-04-22 10:01:23] SECURITY - Failed login attempt for user 'jsmith' from IP 192.168.1.12
+[2025-04-22 10:01:25] ALERT - Suspicious PowerShell command execution: 'Invoke-Mimikatz'
+[2025-04-22 10:01:28] MALWARE - Detected malware hash match on file 'backdoor.vbs'
+    </pre>
+  </section>
+
+  <section>
+    <h2>📁 Documentation</h2>
+    <p>View the full usage guide: <a href="SIEM_Log_Simulator_Guide.md" target="_blank">SIEM_Log_Simulator_Guide.md</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Auroch Security. For demonstration and educational use only.</p>
+  </footer>
+</body>
+</html>
