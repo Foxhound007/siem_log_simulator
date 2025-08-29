@@ -1,6 +1,6 @@
 # 🧪 SIEM Log Simulator
 
-**Author:** Charles G. | Auroch Security  
+**Author:** Charles G. 
 **Purpose:** Generate synthetic Windows-style security events to test SIEM pipelines or log ingestion.
 
 ---
@@ -46,4 +46,4 @@ Pipe these logs into a syslog server or ingest into ELK/Graylog for simulated tr
 
 ---
 
-> This utility is part of the Auroch Security portfolio for demo and testing use.
+
